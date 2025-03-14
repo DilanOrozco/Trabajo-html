@@ -1,0 +1,97 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Inter", sans-serif;
+    
+}
+body{
+    background-color: #121212;
+}
+.header{
+    align-items: center;
+    border-bottom: 1px solid #E0E0E0;;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.header > img{
+    width : 200px
+}
+
+
+
+.header > .nav{
+    display: flex;
+    width: 35%;
+    margin: 0px 10px;
+}
+
+.nav > ul {
+    display: flex; 
+    list-style: none;
+    justify-content: space-between;
+    margin: 0; 
+    padding: 0; 
+    width: 100%;
+}
+
+ul > .link-items {
+    margin: 0 15px; 
+}
+
+.nav > ul > .link-items > a {
+    color: #E0E0E0;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav > ul > .link-items > a:hover {
+    background-color: #3BE477 ;
+    border-radius: 100px;
+    color: #1A1A1A ;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+        
+}
+
+
+main > .welcome {
+    align-items: center;
+    color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+ 
+    margin: 20px;
+    height: 320px;
+}
+
+.welcome > h1{
+    font-size: 40px;
+
+}
+
+.welcome > .btn{
+    background-color: #3BE477 ;
+    border-radius: 100px;
+    color: #1A1A1A ;
+    font-size: 16px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px;
+    text-decoration: none;
+   
+}
