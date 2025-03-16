@@ -1,50 +1,57 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Delius&family=Oswald:wght@200..700&display=swap');
+
+* {
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: "Inter", sans-serif;
-    
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
-body{
+
+body {
     background-color: #121212;
 }
-.header{
+
+/* inicio navbar */
+.header {
     align-items: center;
-    border-bottom: 1px solid #E0E0E0;;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: relative;
     display: flex;
     justify-content: space-around;
+    position: fixed;
     width: 100%;
+
 }
 
-.header > img{
-    width : 200px
+.header>img {
+    width: 200px
 }
 
-
-
-.header > .nav{
+.header>.nav {
     display: flex;
     width: 35%;
     margin: 0px 10px;
 }
 
-.nav > ul {
-    display: flex; 
+.nav>ul {
+    display: flex;
     list-style: none;
     justify-content: space-between;
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
-ul > .link-items {
-    margin: 0 15px; 
+ul>.link-items {
+    margin: 0 15px;
 }
 
-.nav > ul > .link-items > a {
+.nav>ul>.link-items>a {
     color: #E0E0E0;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
+    font-family: "Chakra Petch", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
@@ -52,46 +59,163 @@ ul > .link-items {
     padding: 10px;
 }
 
-.nav > ul > .link-items > a:hover {
-    background-color: #3BE477 ;
+.nav>ul>.link-items>a:hover {
+    background-color: #38b000;
     border-radius: 100px;
-    color: #1A1A1A ;
-    font-size: 16px;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    text-decoration: none;
-        
+    color: #1A1A1A;
 }
 
+/* fin navbar */
 
-main > .welcome {
+/*inicio main index */
+main>.welcome {
     align-items: center;
+    background-image: url(../img/image.png);
     color: #E0E0E0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
- 
-    margin: 20px;
-    height: 320px;
+    height: 400px;
 }
 
-.welcome > h1{
+.welcome>h1 {
     font-size: 40px;
 
 }
 
-.welcome > .btn{
-    background-color: #3BE477 ;
+.welcome>.btn {
+    background-color: #38b000;
     border-radius: 100px;
-    color: #1A1A1A ;
+    color: #1A1A1A;
     font-size: 16px;
-    font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;
     padding: 10px;
     text-decoration: none;
-   
+
 }
+
+.projects {
+    padding: 100px 50px !important;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3db818;
+    font-size: 25px !important;
+    padding-bottom: 50px;
+}
+
+
+.gallery-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 12px;
+    height: 100vh;
+    max-height: 800px;
+}
+
+.parent>div {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.parent>div:hover {
+    transform: scale(1.02);
+}
+
+.parent img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.div1 {
+    grid-column: span 3;
+    grid-row: span 3;
+}
+
+.div2 {
+    grid-column: 4 / span 2;
+    grid-row: span 3;
+}
+
+.div5 {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+}
+
+.div6 {
+    grid-column: 3 / span 3;
+    grid-row: 4 / span 2;
+}
+
+/* fin main index */
+
+/* inicio main academy */
+.academia{
+    padding-top: 100px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.education-content{
+    width: 100% !important;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.academia > .education-content > .education{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    width: 800px;
+}
+
+.education > .edu-item{
+    background-color: #E0E0E0;
+    border-radius: 15px;
+    padding: 10px;
+    width: 300px;
+
+}
+
+/* fin main academy */
+
+main > .about_me{
+    padding-top: 100px;
+}
+
+
+/* inicio footer */
+.footer {
+    align-items: center;
+    background-color: #1A1A1A;
+    color: #E0E0E0;
+    display: flex;
+    justify-content: space-around;
+    height: 120px;
+    padding: 10px;
+}
+
+.footer > .social-media > i{
+    margin: 10px;
+}
+
+/* fin footer */
